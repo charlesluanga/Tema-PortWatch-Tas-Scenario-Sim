@@ -57,3 +57,6 @@ See `data/README_DATA.md`. Upstream PortWatch estimates are redistributed here f
 ## Licence
 
 Code: MIT (see `LICENSE`). Upstream data remain under their original terms.
+
+<!-- package: scripts and inputs only; figures generated locally -->
+
