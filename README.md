@@ -1,24 +1,28 @@
 # Open-data truck appointment scenario simulation (Tema PortWatch intensity)
 
-This package reproduces Monte Carlo scenario experiments that map publicly observed seaside container intensity to landside truck-appointment control policies (uncoordinated arrivals, static flattening, forecast heuristic, residual reallocation, storage-constrained variant, and an expected-capacity LP comparator).
+This package provides the scripts and input data needed to reproduce Monte Carlo scenario experiments that map publicly observed seaside container intensity to landside truck-appointment control policies (uncoordinated arrivals, static flattening, forecast heuristic, residual reallocation, storage-constrained variant, and an expected-capacity LP comparator).
+
+Finished figures and result tables are **not** stored in this repository. They are created locally when you run the scripts.
 
 ## Quick start
 
 ```powershell
-cd public_github_tema_tas_opendata
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 python run_all.py
 ```
 
-Full re-simulation can take a long time (many days × replications × scenarios × capacity levels). For a quick check of package integrity, run:
+Full re-simulation can take a long time. For a quick integrity check:
 
 ```powershell
 python -m pytest tests -q
 ```
 
-Reference summary CSVs and figures under `open_data_sim/outputs_revision/` and `open_data_sim/figures_revision/` are included so results can be inspected without a full re-run. Regenerating day-level replications requires `run_revision_experiments.py`.
+After a successful run, outputs appear under:
+
+- `open_data_sim/outputs_revision/`
+- `open_data_sim/figures_revision/`
 
 ## What is reproduced
 
@@ -26,7 +30,7 @@ Reference summary CSVs and figures under `open_data_sim/outputs_revision/` and `
 - Scenarios: S0, S1, S2, S3, S3s, S_OPT
 - Co-primary effective capacity levels \(S \in \{1,2,3\}\)
 - Documented defaults: \(\varepsilon=10^{-9}\), \(\theta=0.50\), \(\gamma=0.20\), \(\delta=0.25\), LP planning \(\bar{\mu}=1.55\)
-- Wilcoxon / Holm / TOST helpers and multi-panel figures
+- Wilcoxon / Holm / TOST helpers and multi-panel figures (generated locally)
 
 ## Repository layout
 
@@ -34,7 +38,7 @@ Reference summary CSVs and figures under `open_data_sim/outputs_revision/` and `
 run_all.py                 One-command entry point
 requirements.txt
 LICENSE
-open_data_sim/             Experiment code and reference outputs/figures
+open_data_sim/             Experiment scripts only
 external_data/             Public/derived input panels
 data/README_DATA.md        Data access and licence notes
 docs/                      Technical replication notes

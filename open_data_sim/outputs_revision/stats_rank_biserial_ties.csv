@@ -1,6 +1,0 @@
-level,metric,scenario,n_pairs,n_pos_S0_higher,n_neg,n_tied,rank_biserial_r_nontied
-day,peak_queue,S1,92,81,0,11,1.0
-day,peak_queue,S2,92,81,0,11,1.0
-day,peak_queue,S3,92,81,0,11,1.0
-day,peak_queue,S3s,92,81,0,11,1.0
-day,peak_queue,S_OPT,92,81,0,11,1.0

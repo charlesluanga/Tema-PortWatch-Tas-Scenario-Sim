@@ -24,18 +24,16 @@ def test_core_scripts_exist():
         "round4_stats.py",
         "run_all.py",
     ):
-        # run_all is at package root
         if name == "run_all.py":
             assert (ROOT / name).exists()
         else:
             assert (sim / name).exists()
 
 
-def test_reference_summary_present():
-    path = ROOT / "open_data_sim" / "outputs_revision" / "summary_by_scenario.csv"
-    assert path.exists()
-    df = pd.read_csv(path)
-    assert len(df) > 0
+def test_finished_outputs_not_shipped():
+    """Package ships scripts only; figures/tables are generated locally."""
+    assert not (ROOT / "open_data_sim" / "figures_revision").exists()
+    assert not (ROOT / "open_data_sim" / "outputs_revision").exists()
 
 
 def test_load_intensity_runs():

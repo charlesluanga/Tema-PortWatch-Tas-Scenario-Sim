@@ -1,4 +1,0 @@
-contrast,n_days,median_S1_rel_imp,median_S_OPT_rel_imp,separate_median_gap_pp,paired_mean_gap,paired_median_gap,wilcoxon_two_sided_p,tost_p_3pp,tost_p_5pp,tost_equivalent_3pp,tost_equivalent_5pp,paired_mean,paired_median,frac_S_OPT_lower_peak,frac_equal,frac_S_OPT_higher_peak
-relative_peak_improvement_S_OPT_minus_S1,81,0.7759521831773828,0.8143004067828852,3.8348223605502385,-0.009785421645659941,0.0,0.0004912621840589961,4.1617868111231946e-10,7.40035948510879e-15,True,True,,,,,
-day_median_peak_S1_minus_S_OPT,92,,,,,,1.4524780357666467e-06,,,,,-10.310947945043527,0.0,0.17391304347826086,0.40217391304347827,0.42391304347826086
-relative_waiting_proxy_improvement_S_OPT_minus_S1,92,,,,-0.08206008364013304,0.0016895579353242707,,,0.9085226591995872,,False,,,,,

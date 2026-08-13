@@ -23,17 +23,7 @@ This runs:
 2. `open_data_sim/make_q1_figures.py` — multi-panel figures and display tables  
 3. `open_data_sim/round4_stats.py` — post-hoc Wilcoxon / tie / TOST helpers from saved outputs  
 
-Expected runtime for step 1 can be substantial on a laptop.
-
-## Inspect without re-running
-
-Open:
-
-- `open_data_sim/outputs_revision/summary_by_scenario.csv`
-- `open_data_sim/outputs_revision/sensitivity_n_servers.csv`
-- `open_data_sim/figures_revision/FigA_stress_envelope.png`
-- `open_data_sim/figures_revision/FigB_policy_comparison.png`
-- `open_data_sim/figures_revision/FigC_ablation_robustness.png`
+Expected runtime for step 1 can be substantial on a laptop. Figures and tables are written locally under `open_data_sim/figures_revision/` and `open_data_sim/outputs_revision/` and are not part of the repository.
 
 ## Path contract
 
