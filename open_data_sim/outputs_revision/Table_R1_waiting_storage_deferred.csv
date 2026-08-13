@@ -1,0 +1,7 @@
+Scenario,Median waiting proxy,p10–p90 waiting proxy,Median storage pressure,Median deferred,Mean deferred
+S0 Uncoordinated,2688.5,"[428, 5012]",0.371,0.0,0.0
+S1 Static flatten,1761.4,"[330, 4383]",0.378,0.0,0.0
+S2 Forecast,1761.3,"[328, 4387]",0.379,0.0,0.0
+S3 Residual realloc.,1734.5,"[329, 4358]",0.378,0.0,0.0
+S3s + storage,1740.1,"[330, 4271]",0.377,0.0,14.98
+S_OPT LP+compliance,1718.5,"[326, 5778]",0.379,0.0,0.0

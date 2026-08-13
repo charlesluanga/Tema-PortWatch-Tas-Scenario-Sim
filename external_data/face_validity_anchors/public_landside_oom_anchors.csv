@@ -1,0 +1,7 @@
+anchor_type,metric,value_or_range,period,source_note,supports,does_not_calibrate
+news_qualitative,haulage delays / empty-return pressure at Tema,multi-day waits reported in public press,2024-2026,public Ghana trade/press reporting,existence of landside congestion,simulated peak residual queue length
+literature_dwell,container cargo dwell time at Tema,order of weeks (older published indicators),~2012 literature,World Bank-style / secondary Tema efficiency notes,yard/storage pressure context,hourly gate residual queue length
+industry_benchmark,container terminal truck turnaround,about 30-120 minutes internationally,industry practice,terminal KPI practice ranges,controlled-regime waiting order of magnitude,Tema-specific measured gate queues
+public_infrastructure,Tema container terminal gate complex,multi-lane public descriptions,public docs,public logistics / terminal overviews,treating S as effective capacity,per-lane measured service rates
+open_seaside,PortWatch daily container calls,Tema intensity series 2019-2026,ongoing,IMF/UNGP PortWatch via HDX,seaside demand forcing,truck arrivals per hour
+official_seaside,GPHA monthly moved vessels (container),monthly container vessel day-sums 2024-2025,2024-2025,GPHA Tema marine monthly ship reports (derived table),PortWatch seaside co-movement,landside gate queues

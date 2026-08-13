@@ -1,0 +1,33 @@
+# Personal / manuscript artefacts
+*.docx
+*.doc
+*.pdf
+*.pptx
+CITATION.cff
+COVER_LETTER*
+AUTHOR_METADATA*
+TITLE_PAGE*
+**/REFERENCES.md
+**/references.bib
+
+# Local / tooling
+.venv/
+__pycache__/
+.cursor/
+.pytest_cache/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Bulky regenerated experiment outputs (summaries/figures are intentionally kept)
+open_data_sim/outputs_revision/scenario_day_replications.csv
+open_data_sim/outputs/
+open_data_sim/figures/
+*.xlsx
+*.xls
+
+# Local private notes
+ASSESSMENT.md
+*_NOTE_SHARING*
+meridian*
+Meridian*
