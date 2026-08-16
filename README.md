@@ -1,6 +1,6 @@
 # Open-data truck appointment scenario simulation (Tema PortWatch intensity)
 
-This package provides the scripts and input data needed to reproduce Monte Carlo scenario experiments that map publicly observed seaside container intensity to landside truck-appointment control policies (uncoordinated arrivals, static flattening, forecast heuristic, residual reallocation, storage-constrained variant, and an expected-capacity LP comparator).
+This package provides the scripts and input data needed to reproduce Monte Carlo scenario experiments that map publicly observed seaside container intensity to landside truck-appointment control policies (uncoordinated arrivals, historical-baseline static slots, forecast-and-capacity-informed planning, private mid-queue adaptation, hard-yard storage control, and a compliance-matched LP on a time-varying within-day capacity path).
 
 Finished figures and result tables are **not** stored in this repository. They are created locally when you run the scripts.
 
@@ -27,10 +27,10 @@ After a successful run, outputs appear under:
 ## What is reproduced
 
 - Demand forcing from PortWatch daily Tema container intensity (`external_data/tema_portwatch_daily_2019_2026.csv`)
-- Scenarios: S0, S1, S2, S3, S3s, S_OPT
-- Co-primary effective capacity levels \(S \in \{1,2,3\}\)
-- Documented defaults: \(\varepsilon=10^{-9}\), \(\theta=0.50\), \(\gamma=0.20\), \(\delta=0.25\), LP planning \(\bar{\mu}=1.55\)
-- Wilcoxon / Holm / TOST helpers and multi-panel figures (generated locally)
+- Scenarios: S0, S1, S2, S3, S3s-H (hard environment), S_OPT
+- Focal effective capacity \(S=1\) with \(S\in\{2,3\}\) sensitivities
+- Documented defaults: \(\varepsilon=10^{-9}\), \(\theta=0.50\), \(\kappa_{\max}=0.60\), \(\delta=0.25\), LP planning \(\bar{\mu}=1.55\)
+- Day-level dependence-aware inference helpers and multi-panel figures (generated locally)
 
 ## Repository layout
 
@@ -52,11 +52,8 @@ tests/                     Smoke tests
 
 ## Data access notes
 
-See `data/README_DATA.md`. Upstream PortWatch estimates are redistributed here for reproducibility; respect HDX / PortWatch terms for redistribution beyond this package. GPHA monthly ship reports are represented only as a derived monthly comparison CSV (not the original spreadsheets).
+See `data/README_DATA.md`. Upstream PortWatch estimates are redistributed here for reproducibility; respect HDX / PortWatch terms for redistribution beyond this package. Official monthly ship reports are represented only as a derived monthly comparison CSV (not original spreadsheets).
 
 ## Licence
 
 Code: MIT (see `LICENSE`). Upstream data remain under their original terms.
-
-<!-- package: scripts and inputs only; figures generated locally -->
-

@@ -388,7 +388,7 @@ def main() -> None:
     wide = wide.reindex(columns=SCENARIOS)
     wide.to_csv(OUT / "Table_Results_Median_by_Scenario.csv")
 
-    # uncertainty bands table
+    # bands table for manuscript
     band_rows = []
     for metric in ["mean_wait_min", "peak_queue", "corridor_delay_index", "emissions_proxy"]:
         for s in SCENARIOS:

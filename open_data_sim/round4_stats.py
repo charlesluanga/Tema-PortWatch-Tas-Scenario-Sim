@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Post-hoc stats from existing scenario outputs (no full re-simulation)."""
+"""Round-4 post-hoc stats from existing outputs (no full re-simulation)."""
 from __future__ import annotations
 
 from pathlib import Path
