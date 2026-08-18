@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-18
+
+- Updated package short title to match the locked study title (truck appointment control under data constraints; Port of Tema)
+- Scripts-and-inputs-only package policy unchanged
+
 ## 2026-08-17
 
 - Synced experiment scripts with the frozen primary-estimand Results architecture (`κ_max` forecast-pressure blend; day-level structural aggregation compatible with the confirmatory estimand)

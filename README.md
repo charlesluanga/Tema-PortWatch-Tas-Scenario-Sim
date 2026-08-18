@@ -1,8 +1,8 @@
-# Open-data truck appointment scenario simulation (Tema PortWatch intensity)
+# Truck appointment control under data constraints: open-data counterfactual evaluation at the Port of Tema
 
-This package provides the scripts and input data needed to reproduce Monte Carlo scenario experiments that map publicly observed seaside container intensity to landside truck-appointment control policies (uncoordinated arrivals, historical-baseline static slots, forecast-and-capacity-informed planning, private mid-queue adaptation, hard-yard storage control, and a compliance-matched LP on a time-varying within-day capacity path).
+This package reproduces Monte Carlo scenario experiments that map publicly observed seaside container intensity to landside truck-appointment control policies (uncoordinated arrivals, historical-baseline static slots, forecast-and-capacity-informed planning, private mid-queue adaptation, hard-yard storage control, and a compliance-matched LP on a time-varying within-day capacity path).
 
-Finished figures and result tables are **not** stored in this repository. They are created locally when you run the scripts.
+Finished figures, result tables, and manuscript files are **not** stored in this repository. They are created locally when you run the scripts.
 
 ## Quick start
 
